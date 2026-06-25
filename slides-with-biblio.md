@@ -289,5 +289,105 @@ The process is NOT CAPABLE (Cpk = 1.09 < 1.33).
 Machine 3 is operating...
 
 ---
+
+:::: {.columns}
+::: {.column width="50%"}
+### T-Test Distribution Curve Chart: Machine 1 vs Machine 2 (P=100kPa, T=303K)
+This chart displays the theoretical t-distribution curve for the given degrees of freedom, marking the calculated t-statistic and the critical rejection regions for a two-tailed test with α = 0.05.
+
+**Observations:**
+- The calculated t-statistic (-17.61) is outside the critical rejection regions.
+- The shaded red areas represent the rejection regions, where the null hypothesis would be rejected.
+- This visualization helps understand the significance of the calculated t-statistic relative to the expected distribution under the null hypothesis.
+::: 
+
+::: {.column width="50%"}
+![](media/plots/ttest_P100_T303_t_dist_ttest.png)
+::: 
+::::
+
+---
+
+### P-value and T-statistic from T-test: Machine 1 vs Machine 2 (P=100kPa, T=303K)
+
+The independent two-sample t-test compares the means of measurements from Machine 1 and Machine 2 under this specific condition.
+
+- **Hypothesis (H0)**: The mean measurements are equal ($\mu_1 = \mu_2$).
+- **Alternative Hypothesis (H1)**: The mean measurements are not equal ($\mu_1 \neq \mu_2$).
+
+**Calculated T-statistic:** `-17.6123`
+**Calculated P-value:** `0.0000`
+
+---
+
+### Evaluation: Is there a true difference at (P=100kPa, T=303K)?
+
+**Significance Level (α):** `0.05`
+
+**Conclusion:** `Yes`
+
+**Explanation:**
+Since the p-value (0.0000) is less than the significance level (α = 0.05), we reject the null hypothesis. There is statistically significant evidence to conclude a true difference in the mean measurements between Machine 1 and Machine 2 under these conditions.
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### T-Test Distribution Curve Chart: Machine 1 vs Machine 2 (P=300kPa, T=373K)
+This chart displays the theoretical t-distribution curve for the given degrees of freedom, marking the calculated t-statistic and the critical rejection regions for a two-tailed test with α = 0.05.
+
+**Observations:**
+- The calculated t-statistic (-0.93) is within the critical rejection regions.
+- The shaded red areas represent the rejection regions, where the null hypothesis would be rejected.
+- This visualization helps understand the significance of the calculated t-statistic relative to the expected distribution under the null hypothesis.
+::: 
+
+::: {.column width="50%"}
+![](media/plots/ttest_P300_T373_t_dist_ttest.png)
+::: 
+::::
+
+---
+
+### P-value and T-statistic from T-test: Machine 1 vs Machine 2 (P=300kPa, T=373K)
+
+The independent two-sample t-test compares the means of measurements from Machine 1 and Machine 2 under this specific condition.
+
+- **Hypothesis (H0)**: The mean measurements are equal ($\mu_1 = \mu_2$).
+- **Alternative Hypothesis (H1)**: The mean measurements are not equal ($\mu_1 \neq \mu_2$).
+
+**Calculated T-statistic:** `-0.9332`
+**Calculated P-value:** `0.3515`
+
+---
+
+### Evaluation: Is there a true difference at (P=300kPa, T=373K)?
+
+**Significance Level (α):** `0.05`
+
+**Conclusion:** `No`
+
+**Explanation:**
+Since the p-value (0.3515) is greater than or equal to the significance level (α = 0.05), we fail to reject the null hypothesis. There is no statistically significant evidence to conclude a true difference in the mean measurements between Machine 1 and Machine 2 under these conditions.
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### T-Test Distribution Curve Chart: Machine 1 vs Machine 2 (P=100kPa, T=303K)
+This chart displays the theoretical t-distribution curve for the given degrees of freedom, marking the calculated t-statistic and the critical rejection regions for a two-tailed test with α = 0.05.
+
+**Observations:**
+- The calculated t-statistic (-17.61) is outside the critical rejection regions.
+- The shaded red areas represent the rejection regions, where the null hypothesis would be rejected.
+- This visualization helps understand the significance of the calculated t-statistic relative to the expected distribution under the null hypothesis.
+:::
+
+::: {.column width="50%"}
+![](media/plots/ttest_P100_T303_t_dist_ttest.png)
+:::
+::::
+
+---
 # Bibliography
 <div id="refs"></div>

@@ -940,6 +940,85 @@ null hypothesis.</p>
 </div>
 </div>
 </section>
+<section class="slide level1">
+
+<h3
+id="slide-19-anova-table-prf-for-cpressure-machine-1-resistance">Slide
+19: ANOVA Table / Pr(&gt;F) for C(Pressure) (Machine 1 Resistance)</h3>
+<p>The Analysis of Variance (ANOVA) table evaluates the statistical
+significance of C(Pressure) on Machine 1’s Resistance.</p>
+<p><strong>ANOVA Table (Type 2 Sum of Squares):</strong></p>
+<pre><code>                                 sum_sq     df            F         PR(&gt;F)
+C(Pressure)                 1317.992331    2.0  1034.226557  8.809326e-125
+C(Temperature)               532.167737    2.0   417.591205   4.643837e-82
+C(Pressure):C(Temperature)    89.287684    4.0    35.031954   2.048609e-23
+Residual                     166.305920  261.0          NaN            NaN</code></pre>
+<p><strong>Evaluation for C(Pressure):</strong> - <strong>Pr(&gt;F)
+value:</strong> <code>0.0000</code> - <strong>Significance Level
+(α):</strong> <code>0.05</code> - <strong>Is C(Pressure)
+significant?</strong> <code>Yes</code></p>
+</section>
+<section class="slide level1">
+
+<h3
+id="slide-20-anova-table-prf-for-ctemperature-machine-1-resistance">Slide
+20: ANOVA Table / Pr(&gt;F) for C(Temperature) (Machine 1
+Resistance)</h3>
+<p>The Analysis of Variance (ANOVA) table evaluates the statistical
+significance of C(Temperature) on Machine 1’s Resistance.</p>
+<p><strong>ANOVA Table (Type 2 Sum of Squares):</strong></p>
+<pre><code>                                 sum_sq     df            F         PR(&gt;F)
+C(Pressure)                 1317.992331    2.0  1034.226557  8.809326e-125
+C(Temperature)               532.167737    2.0   417.591205   4.643837e-82
+C(Pressure):C(Temperature)    89.287684    4.0    35.031954   2.048609e-23
+Residual                     166.305920  261.0          NaN            NaN</code></pre>
+<p><strong>Evaluation for C(Temperature):</strong> - <strong>Pr(&gt;F)
+value:</strong> <code>0.0000</code> - <strong>Significance Level
+(α):</strong> <code>0.05</code> - <strong>Is C(Temperature)
+significant?</strong> <code>Yes</code></p>
+</section>
+<section class="slide level1">
+
+<h3
+id="slide-21-anova-table-prf-for-cpressurectemperature-machine-1-resistance">Slide
+21: ANOVA Table / Pr(&gt;F) for C(Pressure):C(Temperature) (Machine 1
+Resistance)</h3>
+<p>The Analysis of Variance (ANOVA) table evaluates the statistical
+significance of C(Pressure):C(Temperature) on Machine 1’s
+Resistance.</p>
+<p><strong>ANOVA Table (Type 2 Sum of Squares):</strong></p>
+<pre><code>                                 sum_sq     df            F         PR(&gt;F)
+C(Pressure)                 1317.992331    2.0  1034.226557  8.809326e-125
+C(Temperature)               532.167737    2.0   417.591205   4.643837e-82
+C(Pressure):C(Temperature)    89.287684    4.0    35.031954   2.048609e-23
+Residual                     166.305920  261.0          NaN            NaN</code></pre>
+<p><strong>Evaluation for C(Pressure):C(Temperature):</strong> -
+<strong>Pr(&gt;F) value:</strong> <code>0.0000</code> -
+<strong>Significance Level (α):</strong> <code>0.05</code> - <strong>Is
+C(Pressure):C(Temperature) significant?</strong> <code>Yes</code></p>
+</section>
+<section class="slide level1">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3
+id="interaction-plot-pressure-x-temperature-on-machine-1-resistance">Interaction
+Plot: Pressure x Temperature on Machine 1 Resistance</h3>
+<p>This plot visually represents the mean resistance values for each
+combination of Pressure and Temperature. It helps to identify if the
+effect of one factor (e.g., Pressure) on Resistance changes depending on
+the level of the other factor (e.g., Temperature), indicating an
+interaction effect.</p>
+<p><strong>Observations:</strong> - Observe if the lines are parallel.
+Non-parallel lines suggest an interaction effect. - The steeper the
+lines, the stronger the main effect of Pressure. - The vertical distance
+between lines indicates the main effect of Temperature.</p>
+</div><div class="column" style="width:50%;">
+<p><img
+data-src="media/plots/machine1_resistance_interaction_plot.png" /></p>
+</div>
+</div>
+</section>
 <section id="bibliography" class="slide level1">
 <h1>Bibliography</h1>
 <div id="refs" class="references csl-bib-body" role="list">

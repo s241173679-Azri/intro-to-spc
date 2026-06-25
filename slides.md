@@ -348,3 +348,84 @@ This chart displays the theoretical t-distribution curve for the given degrees o
 ![](media/plots/ttest_P100_T303_t_dist_ttest.png)
 :::
 ::::
+
+---
+
+### Slide 19: ANOVA Table / Pr(>F) for C(Pressure) (Machine 1 Resistance)
+
+The Analysis of Variance (ANOVA) table evaluates the statistical significance of C(Pressure) on Machine 1's Resistance.
+
+**ANOVA Table (Type 2 Sum of Squares):**
+
+```
+                                 sum_sq     df            F         PR(>F)
+C(Pressure)                 1317.992331    2.0  1034.226557  8.809326e-125
+C(Temperature)               532.167737    2.0   417.591205   4.643837e-82
+C(Pressure):C(Temperature)    89.287684    4.0    35.031954   2.048609e-23
+Residual                     166.305920  261.0          NaN            NaN
+```
+
+**Evaluation for C(Pressure):**
+- **Pr(>F) value:** `0.0000`
+- **Significance Level (α):** `0.05`
+- **Is C(Pressure) significant?** `Yes`
+
+---
+
+### Slide 20: ANOVA Table / Pr(>F) for C(Temperature) (Machine 1 Resistance)
+
+The Analysis of Variance (ANOVA) table evaluates the statistical significance of C(Temperature) on Machine 1's Resistance.
+
+**ANOVA Table (Type 2 Sum of Squares):**
+
+```
+                                 sum_sq     df            F         PR(>F)
+C(Pressure)                 1317.992331    2.0  1034.226557  8.809326e-125
+C(Temperature)               532.167737    2.0   417.591205   4.643837e-82
+C(Pressure):C(Temperature)    89.287684    4.0    35.031954   2.048609e-23
+Residual                     166.305920  261.0          NaN            NaN
+```
+
+**Evaluation for C(Temperature):**
+- **Pr(>F) value:** `0.0000`
+- **Significance Level (α):** `0.05`
+- **Is C(Temperature) significant?** `Yes`
+
+---
+
+### Slide 21: ANOVA Table / Pr(>F) for C(Pressure):C(Temperature) (Machine 1 Resistance)
+
+The Analysis of Variance (ANOVA) table evaluates the statistical significance of C(Pressure):C(Temperature) on Machine 1's Resistance.
+
+**ANOVA Table (Type 2 Sum of Squares):**
+
+```
+                                 sum_sq     df            F         PR(>F)
+C(Pressure)                 1317.992331    2.0  1034.226557  8.809326e-125
+C(Temperature)               532.167737    2.0   417.591205   4.643837e-82
+C(Pressure):C(Temperature)    89.287684    4.0    35.031954   2.048609e-23
+Residual                     166.305920  261.0          NaN            NaN
+```
+
+**Evaluation for C(Pressure):C(Temperature):**
+- **Pr(>F) value:** `0.0000`
+- **Significance Level (α):** `0.05`
+- **Is C(Pressure):C(Temperature) significant?** `Yes`
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Interaction Plot: Pressure x Temperature on Machine 1 Resistance
+This plot visually represents the mean resistance values for each combination of Pressure and Temperature. It helps to identify if the effect of one factor (e.g., Pressure) on Resistance changes depending on the level of the other factor (e.g., Temperature), indicating an interaction effect.
+
+**Observations:**
+- Observe if the lines are parallel. Non-parallel lines suggest an interaction effect.
+- The steeper the lines, the stronger the main effect of Pressure.
+- The vertical distance between lines indicates the main effect of Temperature.
+:::
+
+::: {.column width="50%"}
+![](media/plots/machine1_resistance_interaction_plot.png)
+:::
+::::
